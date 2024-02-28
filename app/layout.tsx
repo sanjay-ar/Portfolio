@@ -13,7 +13,7 @@ const syne = Syne({
 export const metadata: Metadata = {
   title: "SANJAY A R",
   description:
-    "Frontend Engineer and Product Designer, currently at Crown Branding Agency. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
+  "UG Scholar | MERN Stack Developer | Data Analyst | Web Developer | Deep learning | BIT'25",
   generator: "Next.js",
   applicationName: "SANJAY A R",
   keywords: [
