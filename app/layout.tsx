@@ -44,6 +44,9 @@ export const metadata: Metadata = {
     siteName: "www.sanjayportfolio.com",
     images: [
       {
+        url: "https://github.com/sanjay-ar/Portfolio/blob/main/i.png",
+        width: 1200,
+        height: 630,
         alt: "SANJAY A R — MERN Engineer",
       },
     ],
