@@ -42,14 +42,6 @@ export const metadata: Metadata = {
       "UG Scholar | MERN Stack Developer | Data Analyst | Web Developer | Deep learning | BIT'25",
     url: "https://portfolio-ar.vercel.app/",
     siteName: "www.sanjayportfolio.com",
-    images: [
-      {
-        url: "https://github.com/sanjay-ar/Portfolio/blob/main/i.png",
-        width: 1200,
-        height: 630,
-        alt: "SANJAY A R — MERN Engineer",
-      },
-    ],
     locale: "en-US",
     type: "website",
   },
