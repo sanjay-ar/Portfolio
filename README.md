@@ -54,7 +54,7 @@ Start the server
 Clone the project
 
 ```bash
-  git clone https://github.com/victorcodess/folio-v1
+  gh repo clone sanjay-ar/Portfolio
 ```
 
 Go to the project directory
