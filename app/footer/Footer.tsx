@@ -17,7 +17,7 @@ const Footer = () => {
             className={"m-0 p-0"}
           />
           <Link
-            href="https://github.com/sanju2k3"
+            href="https://github.com/sanjay-ar"
             target="_blank"
             aria-label="sanjay's GitHub Profile"
           >

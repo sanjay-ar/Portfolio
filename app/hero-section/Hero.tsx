@@ -23,7 +23,7 @@ const Hero = () => {
 
         <div className="flex gap-10 text-[#e4ded7] sm:gap-12 md:gap-14 lg:gap-14">
           <Link
-            href="hhttps://github.com/sanju2k3"
+            href="https://github.com/sanjay-ar"
             target="_blank"
             aria-label="View GitHub Profile"
           >
