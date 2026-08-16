@@ -4,7 +4,8 @@ export type ProjectProps = {
   description: string;
   technologies: string[];
   github: string;
-  demo: string;
+  demo?: string;
+  demoLabel?: string;
   image: string;
   available: boolean;
 };
@@ -45,24 +46,36 @@ export const devProjects = [
   },
   {
     id: 3,
-    name: "LinkLeap",
+    name: "E-Recog",
     description:
-      "A website that shortens long URLs using the Bitly API.",
-    technologies: ["JavaScript", "CSS", "Bitly API"],
-    github: "https://github.com/sanjay-ar/LinkLeap",
-    demo: "https://url-shortener-nine-delta.vercel.app",
-    image: require(".//../../public/projects/shortener-new.webp"),
+      "A privacy-first emotion analytics app that detects facial expressions and vocal tone during virtual meetings, then collects participant feedback.",
+    technologies: ["React", "TensorFlow.js", "AWS Amplify"],
+    github: "https://github.com/sanjay-ar/E-recog",
+    demo: "https://erecog.vercel.app/",
+    image: require(".//../../public/projects/e-recog.jpg"),
     available: true,
   },
   {
     id: 4,
-    name: "ImageForge",
+    name: "INCOIS AAIDeS",
     description:
-      "An image generator website that allows users to generate, combine, and download images.",
-    technologies: ["React", "CSS", "Merge Images"],
-    github: "https://github.com/sanjay-ar/ImagiForge",
-    demo: "https://alpaca-image-generator-beta.vercel.app",
-    image: require(".//../../public/projects/alpaca-new-1.webp"),
+      "A marine-species vision system developed with INCOIS that detects and classifies fish to support more sustainable fishing.",
+    technologies: ["Python", "YOLOv8", "OpenCV"],
+    github: "https://github.com/sanjay-ar/INCOIS_AAIDeS-Project",
+    demo:
+      "https://drive.google.com/file/d/101b5fXWozdKy4IIgFe6EDAOzvg1ZopHA/view?pli=1",
+    demoLabel: "Watch demo",
+    image: require(".//../../public/projects/incois-aaides.jpg"),
+    available: true,
+  },
+  {
+    id: 5,
+    name: "Event Management",
+    description:
+      "A role-based JavaFX desktop app for booking and managing events, venues, catering, payments, customer records, and staff workflows.",
+    technologies: ["Java", "JavaFX", "MySQL"],
+    github: "https://github.com/sanjay-ar/Event-management",
+    image: require(".//../../public/projects/event-management.jpg"),
     available: true,
   },
 ];

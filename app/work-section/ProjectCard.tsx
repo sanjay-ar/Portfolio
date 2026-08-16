@@ -15,6 +15,7 @@ const ProjectCard = ({
   technologies,
   github,
   demo,
+  demoLabel = "Live demo",
   image,
   available,
 }: ProjectProps) => {
@@ -36,7 +37,7 @@ const ProjectCard = ({
       <Image
         src={image}
         alt={name}
-        className={`absolute -bottom-2 w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[55%] ${
+        className={`absolute -bottom-2 w-[70%] rounded-2xl shadow-2xl sm:w-[85%] md:w-[60%] lg:max-w-[55%] ${
           id % 2 === 0 ? "right-0" : "left-0"
         }`}
       />
@@ -66,25 +67,27 @@ const ProjectCard = ({
               />
               <span>Source</span>
             </Link>
-            <Link
-              href={demo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 rounded-full bg-white px-4 py-3 text-[12px] font-bold uppercase tracking-wide text-[#0E1016] transition-colors hover:bg-[#e4ded7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white md:px-5 md:text-[14px]"
-              aria-label={`Open ${name} live demo`}
-            >
-              <FontAwesomeIcon
-                icon={faLink}
-                className="w-[18px] text-[18px] md:w-[20px] md:text-[20px]"
-                aria-hidden="true"
-                data-blobity
-                data-blobity-radius="38"
-                data-blobity-offset-x="4"
-                data-blobity-offset-y="4"
-                data-blobity-magnetic="true"
-              />
-              <span>Live demo</span>
-            </Link>
+            {demo && (
+              <Link
+                href={demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 rounded-full bg-white px-4 py-3 text-[12px] font-bold uppercase tracking-wide text-[#0E1016] transition-colors hover:bg-[#e4ded7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white md:px-5 md:text-[14px]"
+                aria-label={`${demoLabel} for ${name}`}
+              >
+                <FontAwesomeIcon
+                  icon={faLink}
+                  className="w-[18px] text-[18px] md:w-[20px] md:text-[20px]"
+                  aria-hidden="true"
+                  data-blobity
+                  data-blobity-radius="38"
+                  data-blobity-offset-x="4"
+                  data-blobity-offset-y="4"
+                  data-blobity-magnetic="true"
+                />
+                <span>{demoLabel}</span>
+              </Link>
+            )}
           </>
         ) : (
           <div className=" flex items-center justify-center gap-4">
@@ -134,7 +137,7 @@ const ProjectCard = ({
             "mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-[#95979D] "
           }
         />
-        <div className="mt-9 flex gap-4">
+        <div className="mt-9 flex flex-wrap gap-x-4 gap-y-2">
           {technologies.map((tech, id) => (
             <AnimatedTitle
               text={tech}
