@@ -10,9 +10,7 @@ const About = () => {
     >
       <div className="mx-auto flex w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
         <AnimatedTitle
-          text={
-            "FROM HACKATHON WINS TO BUILDING AT CISCO, I TURN CURIOSITY INTO IMPACT."
-          }
+          text={"CURIOUS ABOUT THE SYSTEM. RESPONSIBLE FOR THE OUTCOME."}
           className={
             "mb-10 text-left text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]"
           }
@@ -24,17 +22,17 @@ const About = () => {
           <div className="mb-10 flex w-[100%] flex-col gap-4 text-[18px] font-medium  leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[20px] md:leading-relaxed lg:mb-16  lg:max-w-[90%] lg:text-[24px] ">
             <AnimatedBody
               text={
-                "I’m Sanjay A R, a software developer currently at Cisco on the AppDynamics Controller team. I build dependable backend systems, engineering automation, and AI-powered developer experiences."
+                "I’m Sanjay A R, a software developer currently at Cisco on the AppDynamics Controller team. I care about dependable systems, useful automation, and product experiences that make complex work feel clear."
               }
             />
             <AnimatedBody
               text={
-                "My path into engineering began with hackathons and grew into real-world impact. AAIDeS, recommended through Smart India Hackathon 2022, received ₹2.18 lakh in INCOIS grant support and was implemented at INCOIS in 2024."
+                "I enjoy working at the seam between backend engineering and product thinking—turning an ambiguous problem into APIs, data flows, interfaces, tests, and documentation that fit together."
               }
             />
             <AnimatedBody
               text={
-                "Along the way, I earned ServiceNow CAD and CSA certifications and received Cisco recognition for Play to Win, Drive Durable Growth, Think Really Big, and winning the Codex Challenge."
+                "My approach is simple: understand the full system, make the path visible, test the unhappy cases, and keep improving after the first version ships."
               }
             />
           </div>
@@ -55,7 +53,7 @@ const About = () => {
             </div>
             <div className="flex flex-col gap-3">
               <AnimatedTitle
-                text={"Engineering Focus"}
+                text={"How I Work"}
                 className={
                   "text-[24px] text-[#e4ded7] md:text-[30px] lg:text-[20px]"
                 }
@@ -64,7 +62,7 @@ const About = () => {
               />
               <AnimatedBody
                 text={
-                  "Backend engineering, AI/ML, developer automation, full-stack product development, and quality engineering."
+                  "Systems thinking, product ownership, clear communication, error-path testing, and a bias for shipping useful work."
                 }
               />
             </div>

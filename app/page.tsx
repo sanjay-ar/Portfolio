@@ -9,6 +9,7 @@ import NavBar from "./navbar/NavBar";
 
 import dynamic from "next/dynamic";
 const Work = dynamic(() => import("./work-section/Work"));
+const Experience = dynamic(() => import("./experience-section/Experience"));
 const About = dynamic(() => import("./about-section/About"));
 const Contact = dynamic(() => import("./contact-section/Contact"));
 const Footer = dynamic(() => import("./footer/Footer"));
@@ -34,11 +35,22 @@ export default function Home() {
     <>
       <PreLoader />
 
+      <a
+        href="#main-content"
+        className="fixed left-4 top-4 z-[100] -translate-y-24 rounded-full bg-[#e4ded7] px-5 py-3 text-[13px] font-bold text-[#0E1016] transition focus:translate-y-0 focus:outline-none"
+      >
+        Skip to content
+      </a>
       <NavBar />
 
       {/* <ScrollerMotion> */}
-      <main className="flex flex-col items-center justify-center">
+      <main
+        id="main-content"
+        tabIndex={-1}
+        className="flex flex-col items-center justify-center focus:outline-none"
+      >
         <Hero />
+        <Experience />
         <Work />
         <About />
         <Contact />
