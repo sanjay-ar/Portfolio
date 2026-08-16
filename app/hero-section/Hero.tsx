@@ -17,8 +17,13 @@ const Hero = () => {
       <motion.div className="absolute left-0 top-0 right-0 bottom-0 h-full w-full bg-[#0E1016] mix-blend-color"></motion.div>
 
       <div className="absolute top-10 flex justify-between sm:w-[90%] lg:max-w-[1440px]">
-        <div>
-        
+        <div className="hidden sm:block">
+          <motion.p
+            className="text-[12px] font-bold uppercase tracking-[0.18em] text-[#e4ded7] md:text-[14px]"
+            variants={bodyAnimation}
+          >
+            Currently at Cisco · AppDynamics
+          </motion.p>
         </div>
 
         <div className="flex gap-10 text-[#e4ded7] sm:gap-12 md:gap-14 lg:gap-14">
@@ -46,7 +51,6 @@ const Hero = () => {
               LN
             </motion.p>
           </Link>
-        
         </div>
       </div>
 
@@ -65,8 +69,8 @@ const Hero = () => {
             <Image
               src={profile}
               priority
-              alt="Sanjay-portfolio"
-              data-blobity-tooltip="Fine boy"
+              alt="Portrait of Sanjay A R"
+              data-blobity-tooltip="Sanjay A R"
               data-blobity-invert="false"
               className=" w-[150px] rounded-[16px] grayscale hover:grayscale-0 md:w-[200px] md:rounded-[32px] lg:w-[245px]"
             />
@@ -84,8 +88,8 @@ const Hero = () => {
           variants={bodyAnimation}
         >
           <p className="z-50 text-center text-[16px] font-medium text-[#e4ded7] md:text-[20px] lg:text-left">
-          Versatile MERN Developer & Creative Designer{" "}
-            now seeking exciting opportunities!
+            Software developer at Cisco, building dependable systems and
+            AI-powered engineering tools.
           </p>
         </motion.div>
 
@@ -94,7 +98,8 @@ const Hero = () => {
           variants={bodyAnimation}
         >
           <p className="text-right text-[16px] font-semibold text-[#e4ded7] md:text-[20px]">
-          In my MERN exploits, I leverage Node.js alongside top-tier libraries like React.js and Next.js to create stellar products.
+            On the AppDynamics Controller team, I work across backend
+            engineering, automation, quality, and developer experience.
           </p>
         </motion.div>
       </div>

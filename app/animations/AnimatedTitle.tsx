@@ -7,6 +7,7 @@ type AnimatedTitleProps = {
   className: string;
   wordSpace: string;
   charSpace: string;
+  id?: string;
   delay?: number;
 };
 
@@ -15,6 +16,7 @@ export default function AnimatedTitle({
   className,
   wordSpace,
   charSpace,
+  id,
 }: AnimatedTitleProps) {
   //   const text = "Animated Text"; // This would normally be passed into this component as a prop!
 
@@ -55,7 +57,7 @@ export default function AnimatedTitle({
   };
 
   return (
-    <h2 aria-label={text} role="heading" className={className}>
+    <h2 id={id} aria-label={text} className={className}>
       {text.split(" ").map((word, index) => {
         return (
           <motion.span
