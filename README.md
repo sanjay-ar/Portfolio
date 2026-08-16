@@ -1,7 +1,6 @@
-
 # Sanjay A R - Portfolio
 
-I'm Sanjay A R, a passionate individual with interests in artificial intelligence, machine learning, and web development. Below you'll find details about my work experience, projects, technical skills, education, publications, and achievements.
+I'm Sanjay A R, a software developer currently at Cisco on the AppDynamics Controller team. My work spans backend engineering, AI/ML, developer automation, quality engineering, and full-stack product development.
 
 ## Screenshots & Demo
 
@@ -12,7 +11,6 @@ I'm Sanjay A R, a passionate individual with interests in artificial intelligenc
 ![App Screenshot](https://github.com/sanjay-ar/SkyQuest/assets/95616838/4f1d56b5-6e27-49c1-916a-5225acadd234)
 
 [View Live Demo](https://portfolio-ar.vercel.app/)
-
 
 ## Run Locally
 
@@ -39,7 +37,6 @@ Start the server
 ```bash
   npm run dev
 ```
-
 
 ## Technical Skills
 
@@ -83,6 +80,4 @@ Start the server
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sanjay%20A%20R-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/sanjay-ar/)  
 [![GitHub](https://img.shields.io/badge/GitHub-sanjay--ar-black?style=flat-square&logo=github)](https://github.com/sanjay-ar)
 
-> 💡 *Like this project? Leave a ⭐ and connect with me!*
-
-
+> 💡 _Like this project? Leave a ⭐ and connect with me!_
