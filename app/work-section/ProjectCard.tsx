@@ -50,29 +50,40 @@ const ProjectCard = ({
             <Link
               href={github}
               target="_blank"
-              className="rounded-full"
-              aria-label="Open GitHub Repository"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 rounded-full bg-white px-4 py-3 text-[12px] font-bold uppercase tracking-wide text-[#0E1016] transition-colors hover:bg-[#e4ded7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white md:px-5 md:text-[14px]"
+              aria-label={`View ${name} source code on GitHub`}
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className=" w-[20px] rounded-full bg-white p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
+                className="w-[18px] text-[18px] md:w-[20px] md:text-[20px]"
+                aria-hidden="true"
                 data-blobity
                 data-blobity-radius="38"
                 data-blobity-offset-x="4"
                 data-blobity-offset-y="4"
                 data-blobity-magnetic="true"
               />
+              <span>Source</span>
             </Link>
-            <Link href={demo} target="_blank" aria-label="Open Live Demo">
+            <Link
+              href={demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 rounded-full bg-white px-4 py-3 text-[12px] font-bold uppercase tracking-wide text-[#0E1016] transition-colors hover:bg-[#e4ded7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white md:px-5 md:text-[14px]"
+              aria-label={`Open ${name} live demo`}
+            >
               <FontAwesomeIcon
                 icon={faLink}
-                className=" w-[20px] rounded-full bg-white p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
+                className="w-[18px] text-[18px] md:w-[20px] md:text-[20px]"
+                aria-hidden="true"
                 data-blobity
                 data-blobity-radius="38"
                 data-blobity-offset-x="4"
                 data-blobity-offset-y="4"
-                data-blobity-magnetic="trues"
+                data-blobity-magnetic="true"
               />
+              <span>Live demo</span>
             </Link>
           </>
         ) : (
@@ -80,8 +91,9 @@ const ProjectCard = ({
             <Link
               href={github}
               target="_blank"
+              rel="noopener noreferrer"
               className="mt-1 rounded-full"
-              aria-label="Open GitHub Repository"
+              aria-label={`View ${name} source code on GitHub`}
             >
               <FontAwesomeIcon
                 icon={faGithub}
