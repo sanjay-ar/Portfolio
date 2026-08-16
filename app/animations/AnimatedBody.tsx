@@ -56,11 +56,8 @@ export default function AnimatedBody({
 
   return (
     <motion.p
-      aria-label={text}
-      role="heading"
       className={className}
       ref={ref}
-      aria-hidden="true"
       initial="hidden"
       animate={ctrls}
       variants={bodyAnimation}

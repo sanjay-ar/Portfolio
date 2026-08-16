@@ -4,7 +4,8 @@ export type ProjectProps = {
   description: string;
   technologies: string[];
   github: string;
-  demo: string;
+  demo?: string;
+  demoLabel?: string;
   image: string;
   available: boolean;
 };
@@ -14,8 +15,8 @@ export const devProjects = [
     id: 0,
     name: "Aahaaram Restaurant",
     description:
-      "Discover, order, and switch themes hassle-free. Dive into a virtual culinary journey – the flavors are online, the delivery is in your imagination!.",
-    technologies: ["React", "Tailwind css", "Firebase"],
+      "Browse the menu, place an order, and switch themes in a responsive restaurant experience.",
+    technologies: ["React", "Tailwind CSS", "Firebase"],
     github: "https://github.com/sanjay-ar/AharamSerenades_RestaurantBooking",
     demo: "https://aahaaramservices-sanju.vercel.app",
     image: require(".//../../public/projects/flixify.webp"),
@@ -26,7 +27,7 @@ export const devProjects = [
     name: "MediConnect",
     description:
       "Effortlessly schedule appointments with our React-powered booking site.",
-    technologies: ["React", "Mysql", "Rasa"],
+    technologies: ["React", "MySQL", "Rasa"],
     github: "https://github.com/sanjay-ar/MediConnect",
     demo: "https://www.linkedin.com/posts/sanjay-ar_bithack23-webdevelopment-softwaredevelopment-activity-7128807042231779329-TN2N?utm_source=share&utm_medium=member_desktop",
     image: require(".//../../public/projects/skywatch-new.webp"),
@@ -45,24 +46,36 @@ export const devProjects = [
   },
   {
     id: 3,
-    name: "LinkLeap",
+    name: "E-Recog",
     description:
-      "A website that reduces the length of your URL using Bit.ly's API",
-    technologies: ["JavaScript", "CSS", "Bit.ly's API"],
-    github: "https://github.com/sanjay-ar/LinkLeap",
-    demo: "https://url-shortener-nine-delta.vercel.app",
-    image: require(".//../../public/projects/shortener-new.webp"),
+      "A privacy-first emotion analytics app that detects facial expressions and vocal tone during virtual meetings, then collects participant feedback.",
+    technologies: ["React", "TensorFlow.js", "AWS Amplify"],
+    github: "https://github.com/sanjay-ar/E-recog",
+    demo: "https://erecog.vercel.app/",
+    image: require(".//../../public/projects/e-recog.jpg"),
     available: true,
   },
   {
     id: 4,
-    name: "ImageForge",
+    name: "INCOIS AAIDeS",
     description:
-      "An image generator website that allows users to generate, combine, and download images.",
-    technologies: ["React", "CSS", "Merge Images"],
-    github: "https://github.com/sanjay-ar/ImagiForge",
-    demo: "http://alpaca-image-generator-beta.vercel.app",
-    image: require(".//../../public/projects/alpaca-new-1.webp"),
+      "A marine-species vision system developed with INCOIS that detects and classifies fish to support more sustainable fishing.",
+    technologies: ["Python", "YOLOv8", "OpenCV"],
+    github: "https://github.com/sanjay-ar/INCOIS_AAIDeS-Project",
+    demo:
+      "https://drive.google.com/file/d/101b5fXWozdKy4IIgFe6EDAOzvg1ZopHA/view?pli=1",
+    demoLabel: "Watch demo",
+    image: require(".//../../public/projects/incois-aaides.jpg"),
+    available: true,
+  },
+  {
+    id: 5,
+    name: "Event Management",
+    description:
+      "A role-based JavaFX desktop app for booking and managing events, venues, catering, payments, customer records, and staff workflows.",
+    technologies: ["Java", "JavaFX", "MySQL"],
+    github: "https://github.com/sanjay-ar/Event-management",
+    image: require(".//../../public/projects/event-management.jpg"),
     available: true,
   },
 ];
