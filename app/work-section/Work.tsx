@@ -18,8 +18,9 @@ const Work = () => {
           Featured Work
         </h2>
         <p className="mt-5 max-w-[650px] text-[16px] font-medium leading-relaxed text-[#95979D] md:text-[18px]">
-          A selection of products I&apos;ve designed and developed, from
-          booking experiences to creative web tools.
+          A selection of products I&apos;ve designed and developed across
+          machine learning, ocean intelligence, healthcare, and full-stack
+          application systems.
         </p>
       </div>
 

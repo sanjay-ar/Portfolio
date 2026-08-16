@@ -9,7 +9,7 @@ const AchievementGallery = () => {
       aria-labelledby="achievements-title"
       className="mt-20 w-full md:mt-28 lg:mt-36"
     >
-      <div className="border-white/15 grid gap-8 border-t pt-10 md:grid-cols-[0.7fr_1.3fr] md:gap-12 md:pt-14">
+      <div className="grid gap-8 border-t border-white/[0.15] pt-10 md:grid-cols-[0.7fr_1.3fr] md:gap-12 md:pt-14">
         <p className="text-[12px] font-bold uppercase tracking-[0.22em] text-[#95979D] md:text-[14px]">
           Milestones · 2022—Now
         </p>

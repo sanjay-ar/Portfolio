@@ -1,67 +1,38 @@
 "use client";
 import Link from "next/link";
-import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavBar = () => {
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    // first prevent the default behavior
-    e.preventDefault();
-    // get the href and remove everything before the hash (#)
-    const href = e.currentTarget.href;
-    const targetId = href.replace(/.*\#/, "");
-    // get the element by id and use scrollIntoView
-    const elem = document.getElementById(targetId);
-    elem?.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
+  const navItems = [
+    { href: "#home", label: "Home" },
+    { href: "#experience", label: "Experience", mobileLabel: "Exp." },
+    { href: "#work", label: "Work" },
+    { href: "#about", label: "About" },
+    { href: "#contact", label: "Contact" },
+  ];
 
   return (
-    <nav className="fixed bottom-10 left-0 right-0 z-50 my-0  mx-auto  flex w-[306px] items-center justify-center gap-1 rounded-lg bg-[#07070a]/90 px-1 py-1 text-[#e4ded7] backdrop-blur-md sm:w-[383.3px] md:p-2 lg:w-[391.3px]">
-
-      <Link
-        href="#home"
-        data-blobity-magnetic="false"
-        onClick={handleScroll}
-        aria-label="Scroll to Home Section"
-      >
-        <h4 className="rounded py-2 px-2 sm:px-4 text-[12px] sm:text-[14px] md:py-1 md:px-4">
-          Home
-        </h4>
-      </Link>
-      <Link
-        href="#work"
-        data-blobity-magnetic="false"
-        onClick={handleScroll}
-        aria-label="Scroll to Work Section"
-      >
-        <h4 className="rounded py-2 px-2 sm:px-4 text-[12px] sm:text-[14px] md:py-1 md:px-4">
-          Work
-        </h4>
-      </Link>
-
-      <Link
-        href="#about"
-        data-blobity-magnetic="false"
-        onClick={handleScroll}
-        aria-label="Scroll to About Section"
-      >
-        <h4 className="rounded py-2 px-2 sm:px-4 text-[12px] sm:text-[14px] md:py-1 md:px-4">
-          About
-        </h4>
-      </Link>
-
-      <Link
-        href="#contact"
-        data-blobity-magnetic="false"
-        onClick={handleScroll}
-        aria-label="Scroll to Contact Section"
-      >
-        <h4 className="rounded py-2 px-2 sm:px-4 text-[12px] sm:text-[14px] md:py-1 md:px-4">
-          Contact
-        </h4>
-      </Link>
+    <nav
+      aria-label="Primary navigation"
+      className="fixed bottom-[calc(1.25rem+env(safe-area-inset-bottom))] left-0 right-0 z-50 mx-auto grid w-[calc(100vw-1.5rem)] max-w-[500px] grid-cols-5 items-center rounded-xl border border-white/10 bg-[#07070a]/90 p-1 text-[#e4ded7] shadow-2xl backdrop-blur-md sm:bottom-8 sm:p-2"
+    >
+      {navItems.map((item) => (
+        <Link
+          key={item.href}
+          href={item.href}
+          data-blobity-magnetic="false"
+          aria-label={`Scroll to ${item.label} section`}
+          className="flex min-h-[44px] items-center justify-center rounded-lg px-1 text-center text-[11px] font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e4ded7] hover:bg-white/10 sm:px-2 sm:text-[13px]"
+        >
+          {item.mobileLabel ? (
+            <>
+              <span className="sm:hidden">{item.mobileLabel}</span>
+              <span className="hidden sm:inline">{item.label}</span>
+            </>
+          ) : (
+            item.label
+          )}
+        </Link>
+      ))}
     </nav>
   );
 };

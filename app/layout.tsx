@@ -13,7 +13,7 @@ const syne = Syne({
 export const metadata: Metadata = {
   title: "Sanjay A R — Software Developer at Cisco",
   description:
-    "Software developer at Cisco working across backend engineering, AI/ML, automation, quality, and full-stack product development.",
+    "Software developer at Cisco with experience across backend systems, AI/ML, connected healthcare products, and developer automation.",
   generator: "Next.js",
   applicationName: "SANJAY A R",
   keywords: [
@@ -25,6 +25,11 @@ export const metadata: Metadata = {
     "AI engineer",
     "automation",
     "machine learning",
+    "connected products",
+    "smart bed application",
+    "Kotlin Android",
+    "Naatscorp",
+    "INCOIS",
     "react",
     "frontend developer",
     "creative",
@@ -38,15 +43,15 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sanjay A R — Software Developer at Cisco",
     description:
-      "Backend engineering, AI/ML, developer automation, and full-stack product work at Cisco.",
+      "Backend engineering, AI/ML, connected products, and developer automation across Cisco, Naatscorp, and INCOIS.",
     url: "https://portfolio-ar.vercel.app/",
     siteName: "Sanjay A R Portfolio",
     images: [
       {
-        url: "https://portfolio-ar.vercel.app/og.png",
-        width: 1731,
-        height: 909,
-        alt: "Sanjay A R — Software Developer at Cisco",
+        url: "https://portfolio-ar.vercel.app/og-experience.png",
+        width: 1733,
+        height: 907,
+        alt: "Sanjay A R — software developer across backend, AI/ML, and connected products",
       },
     ],
     locale: "en-US",
@@ -56,8 +61,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sanjay A R — Software Developer at Cisco",
     description:
-      "Backend engineering, AI/ML, developer automation, and full-stack product work at Cisco.",
-    images: ["https://portfolio-ar.vercel.app/og.png"],
+      "Backend engineering, AI/ML, connected products, and developer automation across Cisco, Naatscorp, and INCOIS.",
+    images: ["https://portfolio-ar.vercel.app/og-experience.png"],
   },
   robots: {
     index: true,
