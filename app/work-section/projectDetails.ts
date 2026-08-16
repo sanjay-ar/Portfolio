@@ -52,7 +52,7 @@ export const devProjects = [
     technologies: ["React", "TensorFlow.js", "AWS Amplify"],
     github: "https://github.com/sanjay-ar/E-recog",
     demo: "https://erecog.vercel.app/",
-    image: require(".//../../public/projects/e-recog.jpg"),
+    image: require(".//../../public/projects/e-recog-ai.png"),
     available: true,
   },
   {
