@@ -1,4 +1,5 @@
 import AnimatedTitle from "../animations/AnimatedTitle";
+import CiscoAutomationCaseStudy from "./CiscoAutomationCaseStudy";
 import ExperienceEntry from "./ExperienceEntry";
 import SmartBedCaseStudy from "./SmartBedCaseStudy";
 import { experiences } from "./experienceDetails";
@@ -36,6 +37,7 @@ const Experience = () => {
         <ol className="list-none">
           {experiences.map((experience) => (
             <ExperienceEntry key={experience.id} experience={experience}>
+              {experience.id === "cisco" ? <CiscoAutomationCaseStudy /> : null}
               {experience.id === "naatscorp" ? <SmartBedCaseStudy /> : null}
             </ExperienceEntry>
           ))}
